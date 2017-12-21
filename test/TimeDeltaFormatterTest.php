@@ -1,14 +1,7 @@
 <?php
 
-use stv\TimeDeltaFormatter;
-use stv\UtilitiesInterface;
+use stvvt\TimeDeltaFormatter;
 use PHPUnit\Framework\TestCase;
-
-class Utilities implements UtilitiesInterface {
-    public static function __(string $str, ...$args): string {
-        return sprintf($str, ...$args);
-    }
-}
 
 /**
  * TimeDeltaFormatter Test Case
@@ -20,7 +13,6 @@ class TimeDeltaFormatterTest extends TestCase
     protected function setUp()
     {
         TimeDeltaFormatter::$now = strtotime('2012-11-08 12:02:00');
-        TimeDeltaFormatter::$utilities = Utilities::class;
     }
 
     protected static function s($s)
