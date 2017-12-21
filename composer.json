@@ -1,0 +1,23 @@
+{
+    "name": "stv/timedelta",
+    "description": "Relative time in words",
+    "type": "library",
+    "require-dev": {
+        "phpunit/phpunit": "^6.5"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Stefan Stefanov",
+            "email": "stefan.bg@gmail.com"
+        }
+    ],
+    "scripts": {
+        "test": "phpunit test"
+    },
+    "autoload": {
+        "psr-4": {
+            "stv\\": "src/"
+        }
+    }
+}
