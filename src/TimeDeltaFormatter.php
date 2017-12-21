@@ -257,6 +257,10 @@ class TimeDeltaFormatter
 
         return $self->say($self->round());
     }
+
+    public function __toString() {
+        return $this->say($this->round());
+    }
 }
 
 TimeDeltaFormatter::$now = time();

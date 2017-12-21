@@ -1,5 +1,5 @@
 {
-    "name": "stv/timedelta",
+    "name": "stvvt/timedelta",
     "description": "Relative time in words",
     "type": "library",
     "require-dev": {
