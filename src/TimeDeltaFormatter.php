@@ -1,6 +1,6 @@
 <?php
 
-namespace stv;
+namespace stvvt;
 
 class TimeDeltaFormatter
 {
@@ -21,7 +21,7 @@ class TimeDeltaFormatter
     /**
      * @var UtilitiesInterface
      */
-    public static $utilities;
+    public static $utilities = Utilities::class;
 
     /**
      * Internal structure holding time delta parts.
@@ -264,3 +264,9 @@ class TimeDeltaFormatter
 }
 
 TimeDeltaFormatter::$now = time();
+
+class Utilities implements UtilitiesInterface {
+    public static function __(string $str, ...$args): string {
+        return sprintf($str, ...$args);
+    }
+}
